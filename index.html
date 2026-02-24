@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>[Dev Miles] — Technicien Informatique Junior</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/three@0.152.2/build/three.min.js"></script>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <nav class="nav container">
+      <div class="brand">[Dev Miles]</div>
+
+      <!-- ✅ NAVIGATION CORRIGÉE -->
+      <ul class="nav-links">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="controls">
+        <button id="themeToggle" aria-label="Basculer thème">🌙</button>
+      </div>
+
+      <button class="hamburger" aria-label="Ouvrir menu">☰</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero-section">
+    <canvas id="bgCanvas" class="bg-canvas"></canvas>
+    <div class="hero-content container">
+      <div class="hero-card glass">
+        <h1>[Dev Miles]</h1>
+        <p class="subtitle">Technicien Informatique Junior — Développement Web & Maintenance</p>
+        <p class="hero-cta">
+          Compétences : HTML • CSS • JavaScript • Python • Maintenance hardware & software
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">Voir mes projets</a>
+          <a href="#contact" class="btn outline">Contactez-moi</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section container about-section reveal">
+    <h2>À propos</h2>
+    <div class="about-grid">
+      <div class="about-text glass">
+        <p>
+          Technicien informatique junior spécialisé en développement web et maintenance.
+          Passionné par l'optimisation et la création d'interfaces modernes.
+        </p>
+        <ul>
+          <li>Installation & configuration Windows</li>
+          <li>Optimisation des performances</li>
+          <li>Support utilisateur</li>
+        </ul>
+      </div>
+      <div class="about-stats glass">
+        <div class="stat">
+          <h3>2+</h3>
+          <p>Projets personnels</p>
+        </div>
+        <div class="stat">
+          <h3>100+</h3>
+          <p>Tâches de maintenance</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section container skills-section reveal">
+    <h2>Compétences</h2>
+    <div class="skills-grid">
+
+      <div class="skill-card tilt glass" data-tilt>
+        <h3>HTML</h3>
+        <div class="skill-bar" data-percent="90"><span></span></div>
+      </div>
+
+      <div class="skill-card tilt glass" data-tilt>
+        <h3>CSS</h3>
+        <div class="skill-bar" data-percent="85"><span></span></div>
+      </div>
+
+      <div class="skill-card tilt glass" data-tilt>
+        <h3>JavaScript</h3>
+        <div class="skill-bar" data-percent="75"><span></span></div>
+      </div>
+
+      <div class="skill-card tilt glass" data-tilt>
+        <h3>Python</h3>
+        <div class="skill-bar" data-percent="60"><span></span></div>
+      </div>
+
+      <div class="skill-card tilt glass" data-tilt>
+        <h3>Bureautique</h3>
+        <div class="skill-bar" data-percent="95"><span></span></div>
+      </div>
+
+      <div class="skill-card tilt glass" data-tilt>
+        <h3>Maintenance hardware</h3>
+        <div class="skill-bar" data-percent="80"><span></span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section container services-section reveal">
+    <h2>Services</h2>
+    <div class="services-grid">
+      <div class="service glass">
+        <h3>Maintenance Logicielle</h3>
+        <p>Installation, mise à jour, optimisation système.</p>
+      </div>
+      <div class="service glass">
+        <h3>Maintenance Matérielle</h3>
+        <p>Diagnostic matériel, remplacement composants.</p>
+      </div>
+      <div class="service glass">
+        <h3>Développement Web</h3>
+        <p>Sites responsive et applications front-end.</p>
+      </div>
+      <div class="service glass">
+        <h3>Support & Formation</h3>
+        <p>Assistance utilisateur et formation bureautique.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section container projects-section reveal">
+    <h2>Projets</h2>
+    <div class="projects-grid">
+
+      <div class="project-card flip glass">
+        <div class="card-front">
+          <h3>Site vitrine</h3>
+        </div>
+        <div class="card-back">
+          <p>Création site PME, responsive et optimisé.</p>
+        </div>
+      </div>
+
+      <div class="project-card flip glass">
+        <div class="card-front">
+          <h3>Outil inventaire</h3>
+        </div>
+        <div class="card-back">
+          <p>Script Python avec export CSV.</p>
+        </div>
+      </div>
+
+      <div class="project-card flip glass">
+        <div class="card-front">
+          <h3>Dashboard</h3>
+        </div>
+        <div class="card-back">
+          <p>Monitoring machines en JavaScript.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section container contact-section reveal">
+    <h2>Contact</h2>
+    <form id="contactForm" class="contact-form glass" novalidate>
+      <label>
+        Nom
+        <input type="text" id="name" required />
+      </label>
+      <label>
+        Email
+        <input type="email" id="email" required />
+      </label>
+      <label>
+        Message
+        <textarea id="message" rows="5" required></textarea>
+      </label>
+      <div class="form-actions">
+        <button type="submit" class="btn primary">Envoyer</button>
+        <div id="formMsg"></div>
+      </div>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>[Dev Miles]</strong>
+        <p>Technicien Informatique Junior</p>
+      </div>
+      <div>
+        <p>Email : Ludovictetmoun@gmail.com</p>
+        <p>Téléphone : +237 656 111 771</p>
+      </div>
+    </div>
+    <div class="credits">© <span id="year"></span> [Dev Miles]</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+
+</body>
+</html>
